@@ -11,12 +11,9 @@
     --font-heading: 'Poppins';
     --font-default: 'Montserrat';
 }
-
-
 html {
     font-size: 62.5%;
 }
-
 body {
     display: flex;
     flex-direction: column;
@@ -24,7 +21,6 @@ body {
     color: var(--text-color);
     background-color: #232423;
 }
-
 .loader {
     display: flex;
     align-items: center;
@@ -32,7 +28,6 @@ body {
     height: 100vh;
     width: 100vw;
 }
-
 .spiner {
     height: 120px;
     width: 120px;
@@ -45,7 +40,6 @@ body {
 .hide {
     display: none;
 }
-
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -56,7 +50,6 @@ body {
     }
 
 }
-
 #hamburger {
     display: flex;
     justify-content: space-between;
@@ -69,7 +62,6 @@ body {
     cursor: pointer;
     z-index: 11;
 }
-
 #hamburger .linha {
     width: 100%;
     height: .4rem;
@@ -77,7 +69,6 @@ body {
     box-shadow: .1rem .1rem rgb(51, 51, 51);
     border-radius: .4rem;
 }
-
 nav ul {
     display: flex;
     flex-direction: column;
@@ -94,28 +85,22 @@ nav ul {
     font-size: 1.5rem;
     border-bottom-left-radius: 4rem;
 }
-
 #menu li {
     list-style: none;
 }
-
 #menu a {
     text-decoration: none;
     color: rgb(236, 236, 236);
 }
-
 #menu a:hover {
     color: #fff;
 }
-
 .menu-show {
     right: -20rem;
 }
-
 header h1 {
     font-size: clamp (2rem, 5vw, 2rem);
 }
-
 header {
     display: flex;
     flex-direction: column;
@@ -127,8 +112,6 @@ header {
     position: relative;
     justify-content: center;
 }
-
-
 header::before {
     content: '';
     width: 100%;
@@ -145,7 +128,6 @@ header::before {
     z-index: -1;
     animation: zoom 5s ease-in-out;
 }
-
 @keyframes zoom {
     0% {
         transform: scale(1.25);
@@ -155,8 +137,6 @@ header::before {
         transform: scale(1);
     }
 }
-
-
 h1 {
     font-size: 7rem;
     padding-bottom: 70rem;
@@ -165,7 +145,6 @@ h1 {
     font-family: 'Poppins';
     text-shadow: 5px 5px 2px #1d1d1d;
 }
-
 .button {
     background: linear-gradient(90deg, #56ab2f, #7cd652);
     padding: 1rem 2rem;
@@ -175,25 +154,19 @@ h1 {
     font-family: var(--font-default);
     text-decoration: none;
 }
-
 .button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #a8e063;
 }
-
 section {
     background-color: #232423;
 }
-
 .section-presentation {
     display: flex;
     color: var(--text-secudary);
     flex-direction: column;
 }
-
-
 .section-presentation div {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
@@ -201,109 +174,94 @@ section {
     align-items: center;
     padding-top: 2rem;
 }
-
 .taca3 {
-    gap: 2rem;
     display: flex;
-    width: 60%;
+    right: 20rem;
+    width: 38%;
     height: auto;
-    align-items: center;
     padding-top: 0.5rem;
+    padding-left: 30rem;
+    overflow: auto;
 }
-
 .texto1 {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding-left: 5rem;
+    gap: 5rem;
+    padding-right: 10rem;
+    left: 40%;
+    bottom: -55%;
     font-size: 2rem;
+    position: absolute;
     font-family: var(--font-default)
 }
-
-
 h2 {
     display: flex;
     flex-direction: column;
     font-size: 3rem;
     margin-top: 1.5rem;
     align-items: center;
+    gap: 5rem;
 }
-
 #section-chave {
     gap: 2rem;
 }
-
 #section-chave ul {
     display: flex;
     justify-content: space-around;
     gap: 4rem;
-    margin-top: 4rem;
+    margin-top: 10rem;
     flex-wrap: wrap;
     flex-direction: row;
     margin-left: 20rem;
     margin-right: 20rem;
 }
-
 #section-chave li {
     list-style: none;
     position: relative;
     cursor: pointer;
 }
-
-.hidantal {
+.erro1 {
     width: 275px;
-    height: 375px;
+    height: 670px;
     padding-top: 0;
-    padding-bottom: 10rem;
+    padding-bottom: 12rem;
 }
-
-.profenid {
+.erro2 {
     width: 275px;
-    height: 375px;
+    height: 650px;
     padding-bottom: 10rem;
 }
-
-.neozine {
+.erro3 {
     width: 275px;
-    height: 375px;
+    height: 650px;
     padding-bottom: 10rem;
 }
-
-.amplictil {
+.erro4 {
     width: 275px;
-    height: 385px;
-    padding-bottom: 10rem;
-}
-
-.Clorana {
-    width: 275px;
-    height: 374px;
-    padding-bottom: 10rem;
-}
-
-.respiratus {
-    width: 250px;
-    height: 365px;
+    height: 650px;
     padding-bottom: 10rem;
 }
 
 #section-chave li .time-info {
     position: absolute;
     opacity: 0;
-    bottom: -20px;
+    bottom: -10px;
+    padding-bottom: -60px;
     transition: opacity .5s, bottom .5s;
-  }
+    gap: 5rem;
+    
+}
 
 .time-info {
+    top: 570px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    position: absolute;
-    bottom: 0;
+    position:absolute;
     left: 1rem; 
     font-size: 1.5rem;
 }
-
 #section-chave h2 {
     display: flex;
     flex-direction: column;
@@ -311,7 +269,6 @@ h2 {
     padding-top: 1.5rem;
     align-items: center;
 }
-
 #section-loja {
     display: flex;
     justify-content: center;
@@ -320,7 +277,6 @@ h2 {
     background-size: cover;
     margin-top: 15rem;
 }
-
 .loja {
     display: flex;
     justify-items: start;
@@ -334,7 +290,6 @@ h2 {
     margin-top: 15rem;
     margin-bottom: 15rem;
 }
-
 .loja h2 {
     font-size: 2.5rem;
     position: absolute;
@@ -343,19 +298,16 @@ h2 {
     padding: 1rem 1rem;
     border-radius: 5px;
 }
-
 .loja span{
     font-size: 2rem;
     font-weight: bold;
 }
-
 .loja label {
     display: block;
     font-weight: 750;
     margin-top: 1rem;
     font-size: 2rem;
 }
-
 .loja select,
 .loja input[type="text"] {
     border: none;
@@ -365,67 +317,27 @@ h2 {
     width: 100%;
     margin-top: .5rem;
 }
-
-.loja .radio-buttons {
-    margin-top: .5rem;
-    display: flex;
-    gap: 1rem;
-}
-
-.loja .radio-buttons label {
-    display: flex;
-    align-items: center;
-}
-
 .loja .radio-buttons input[type="radio"] {
     margin-right: .5rem;
 }
-
 .loja .name-input {
     margin-top: 1rem;
     display: none;
 }
 
-
-.loja .total {
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: 700;
-}
-
-.loja .total span {
-    font-size: 2.2rem;
-}
-
-.loja button {
-    background-color: #031E3C;
-    border: none;
-    border-radius: .4rem;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 1rem;
-    width: 100%;
-    margin-top: 2rem;
-    transition: background-color 0.2s ease-in-out;
-}
-
-.loja button:hover {
-    background-color: #052e5e;
-}
-
 @media (max-width: 980px) {
     .texto1 {
-        display: flex;
-        flex-direction: column;
-        padding-left: 5rem;
-        padding-right: 5rem;
-        font-size: 2rem;
-        font-family: var(--font-default)
-    }
+        left: 0;
+        bottom: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1.5rem;
+        position: static;
+      }
+      #section-chave ul {
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
 
     .estadio {
         display: flex;
@@ -436,13 +348,13 @@ h2 {
     }
 
     .taca3 {
-        gap: 2rem;
-        display: flex;
-        width: 85%;
-        height: auto;
-        align-items: center;
-        padding-top: 0.5rem;
-    }
+        right: auto;
+        width: 40%;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+        overflow: hidden;
+      }
     nav ul {
         display: flex;
         flex-direction: column;
@@ -494,14 +406,13 @@ h2 {
 body {
     font-family: Arial, sans-serif;
   }
-  
+
 form {
 max-width: 500px;
 margin: 0 auto;
 padding: 20px;
 border: 1px solid #ccc;
 }
-
 label {
 display: block;
 margin-bottom: 10px;
